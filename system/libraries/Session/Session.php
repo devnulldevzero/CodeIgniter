@@ -396,7 +396,7 @@ class CI_Session {
 				{
 					$_SESSION['__ci_vars'][$key] = 'old';
 				}
-				elseif ($value === 'old' || $value < $current_time)
+				elseif ($value === 'old')
 				{
 					unset($_SESSION[$key], $_SESSION['__ci_vars'][$key]);
 				}
